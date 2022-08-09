@@ -1,7 +1,7 @@
 # Проект «Большое путешествие (простой)»
 
 * Студент: [Roman Malinovskiy](https://up.htmlacademy.ru/ecmascript/18/user/1878499).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Васинская](https://htmlacademy.ru/profile/vanastasiya).
 
 ---
 
