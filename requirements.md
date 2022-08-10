@@ -26,4 +26,3 @@ npm i eslint@8.13.0 -DE
 - @babel/preset-env@7.18.6
 - babel-loader@8.2.5
 - css-loader@6.7.1
-- npm i  
