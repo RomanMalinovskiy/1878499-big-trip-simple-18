@@ -3,9 +3,15 @@
   "version": "18.0.0",
   "private": true,
   "description": "Проект «Большое путешествие (простой)» от HTML Academy",
+  "browserslist": [
+    "last 2 wersions",
+    "not dead",
+    "not ie <= 11",
+    "not < 0.25%"
+  ],
   "scripts": {
     "lint": "eslint src/",
-    "build": "webpack --mode production",
+    "build": "web pack --mode production",
     "start": "webpack serve --mode development --open"
   },
   "devDependencies": {
