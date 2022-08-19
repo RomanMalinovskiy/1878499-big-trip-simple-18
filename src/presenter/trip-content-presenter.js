@@ -1,18 +1,17 @@
-import EventEditView from '../view/event-edit-view.js';
-import EventNewView from '../view/event-new-view.js';
-import EventPointView from '../view/event-point-view.js';
-import EventsListView from '../view/sort-event-view.js';
-import FilterFormView from '../view/filters-form-view';
-import SortView from '../view/event-point-view.js';
+import EventEditView from '../view/event-edit-view';
+import EventsListView from '../view/events-list';
+import EventNewView from '../view/event-new-view';
+import EventPointView from '../view/event-point-view';
+import SortEventView from '../view/sort-event-view';
 import {render} from '../render.js';
 
-export default class TripEventsPresenter {
+export default class TripContentPresenter {
   eventsListComponent = new EventsListView();
 
-  init = (tripEventsContainer) => {
-    this.tripEventsContainer = tripEventsContainer;
-    render (new SortView(), this.tripEventsContainer);
-    render(this.eventsListComponent, this.tripEventsContainer);
+  init = (tripContentContainer) => {
+    this.tripContentContainer = tripContentContainer;
+    render (new SortEventView(), this.tripContentContainer);
+    render(this.eventsListComponent, this.tripContentContainer);
     render(new EventEditView() ,this.eventsListComponent.getElement());
     render(new EventNewView() ,this.eventsListComponent.getElement());
 
